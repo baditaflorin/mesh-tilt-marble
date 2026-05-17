@@ -49,3 +49,106 @@ body,
   opacity: 0.6;
   font-variant-numeric: tabular-nums;
 }
+
+/* ---- maze-* (tilt-marble) ---- */
+.maze-screen {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 5rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+.maze-screen h1 {
+  margin: 0;
+  color: var(--mesh-accent);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.maze-status {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.maze-name,
+.maze-btn {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--mesh-accent) 35%, transparent);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mesh-fg);
+  font: inherit;
+}
+.maze-btn {
+  cursor: pointer;
+  background: color-mix(in srgb, var(--mesh-accent) 25%, transparent);
+}
+.maze-svg {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  align-self: center;
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--mesh-accent) 30%, transparent);
+  opacity: 0.95;
+  transition: opacity 250ms ease;
+}
+.maze-svg.maze-flash {
+  opacity: 1;
+}
+.maze-bg {
+  fill: rgba(0, 0, 0, 0.35);
+}
+.maze-wall {
+  stroke: color-mix(in srgb, var(--mesh-accent) 80%, white);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.maze-goal {
+  fill: color-mix(in srgb, var(--mesh-accent) 40%, transparent);
+  stroke: var(--mesh-accent);
+  stroke-width: 2;
+}
+.maze-marble {
+  fill: #fff;
+  stroke: var(--mesh-accent);
+  stroke-width: 2;
+}
+.maze-test-row {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  flex-wrap: wrap;
+}
+.maze-test-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1 1 8rem;
+}
+.maze-peer-tilts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+.maze-peer-tilt {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0.25rem;
+}
+.maze-peer-name {
+  font-weight: 600;
+}
+.maze-arm-hint {
+  margin: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
