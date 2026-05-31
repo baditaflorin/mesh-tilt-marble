@@ -1,7 +1,7 @@
 # mesh-tilt-marble
 
 [![pages](https://img.shields.io/badge/live-baditaflorin.github.io%2Fmesh-tilt-marble-6da3ff)](https://baditaflorin.github.io/mesh-tilt-marble/)
-[![version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/baditaflorin/mesh-tilt-marble/blob/main/package.json)
+[![version](https://img.shields.io/badge/version-0.1.1-blue)](https://github.com/baditaflorin/mesh-tilt-marble/blob/main/package.json)
 [![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 > Tilt your phone; the group's average vector navigates a shared marble.
