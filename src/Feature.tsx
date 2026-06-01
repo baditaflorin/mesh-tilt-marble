@@ -168,6 +168,11 @@ function Body({ room, config }: { room: YRoom; config: MeshConfig }) {
       <p className="maze-status">
         {tilts.size} tilting · wins: {wins}
       </p>
+      <p className="maze-howto">
+        Everyone&rsquo;s tilt is <strong>averaged</strong> to steer one shared marble (white dot) to
+        the goal (the ring). Tilt your phone — or open a second tab and use the sliders below — and
+        cooperate to reach it.
+      </p>
       <input
         className="maze-name"
         value={name}
@@ -201,8 +206,9 @@ function Body({ room, config }: { room: YRoom; config: MeshConfig }) {
       </svg>
 
       <div className="maze-test-row">
+        <p className="maze-fallback-label">No phone sensor? Drag to tilt:</p>
         <label>
-          test x
+          ← left / right →
           <input
             type="range"
             min="-100"
@@ -213,7 +219,7 @@ function Body({ room, config }: { room: YRoom; config: MeshConfig }) {
           />
         </label>
         <label>
-          test y
+          ↑ up / down ↓
           <input
             type="range"
             min="-100"
