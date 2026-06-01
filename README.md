@@ -24,7 +24,20 @@
 
 ## What it is
 
-A **rootless-computing** peer-to-peer browser app. No backend of its own beyond the self-hosted WebRTC stack listed below. State lives in a Yjs mesh shared by everyone in the same room.
+A cooperative marble maze you steer together. Everyone in the same room tilts
+their phone (or drags a slider on a laptop); all the tilts are **averaged** into
+one vector that nudges a single shared marble toward the goal ring. Get it there
+and everyone's win counter ticks up. The marble lives in a Yjs mesh shared by
+every player — there's no backend holding your data.
+
+**Try it in 30 seconds:** open the live link, then open it again in a second tab
+(or scan the 📡 room QR on a phone). Drag the "left / right" and "up / down"
+sliders in one tab and watch the same white marble move in the other — both tabs
+render the _same_ marble because its position is shared, not computed per-tab.
+
+A **rootless-computing** peer-to-peer browser app. No backend of its own beyond
+the self-hosted WebRTC stack listed below. State lives in a Yjs mesh shared by
+everyone in the same room.
 
 Read the principles → **https://baditaflorin.github.io/rootless-computing/principles.html**
 
